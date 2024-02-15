@@ -15,12 +15,7 @@ static ServletContext servletContext;
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 
-		System.out.println(servletContext);
-		AnnotationConfigApplicationContext context = (AnnotationConfigApplicationContext) WebApplicationContextUtils.getWebApplicationContext(servletContext);
-		System.out.println(context);
-		// Maintenant, vous pouvez obtenir les beans de votre contexte Spring et les utiliser
-		ApplicationClass applicationClass = context.getBean(ApplicationClass.class);
-		System.out.println(applicationClass);
+
 
 	}
 

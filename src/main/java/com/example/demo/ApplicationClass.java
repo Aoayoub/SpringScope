@@ -5,4 +5,8 @@ import org.springframework.web.context.annotation.ApplicationScope;
 
 
 public class ApplicationClass {
+    @Override
+    public String toString() {
+        return ""+hashCode();
+    }
 }

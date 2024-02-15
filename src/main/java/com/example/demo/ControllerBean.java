@@ -13,8 +13,10 @@ ConfigBeans configBeans;
     @GetMapping("/testscopeApplication")
     public String getapp()
     {
+        MyThread myThread=new MyThread();
+        myThread.run();
 
-        return configBeans.applicationClass()+" ApplicationScope";
+        return configBeans.applicationClass()+" ApplicationScope"+"----------"+myThread.toString();
     }
     @GetMapping("/testscoperequest")
     public String getrequest()
